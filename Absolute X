@@ -6,7 +6,10 @@ local Tab = Window:NewTab("Buff")
 local Section = Tab:NewSection("Buff")
 
 ----Buttons
-Section:NewButton("Keyboard", "ButtonInfo", function()
+Section:NewButton("infinite Yield", "Has Everything", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+Section:NewButton("Keyboard", "Keyboard For Android", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
 end)
 Section:NewSlider("WalkSpeed", "MakeYouGoFaster", 200, 16, function(s) -- 200 (MaxValue) | 16 (MinValue)
